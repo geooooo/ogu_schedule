@@ -11,3 +11,14 @@ dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/normal/roboto_regular.ttf
+        - asset: assets/fonts/roboto/normal/roboto_medium.ttf
+          weight: 600
+    - family: RobotoSlab
+      fonts:
+        - asset: assets/fonts/roboto/slab/roboto_slab_regular.ttf
+        - asset: assets/fonts/roboto/slab/roboto_slab_bold.ttf
+          weight: 700
