@@ -1,0 +1,14 @@
+{
+  "@@locale": "ru",
+  "@@last_modified": "2020-02-25T22:27:52.351294",
+  "AppLocalizations_scheduleLecturesTurgenevUniversityText": "Расписание занятий ОГУ им. Тургенева",
+  "@AppLocalizations_scheduleLecturesTurgenevUniversityText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AppLocalizations_scheduleForTodayText": "Расписание на сегодня",
+  "@AppLocalizations_scheduleForTodayText": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
