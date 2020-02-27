@@ -1,0 +1,1 @@
+class GetLecturesException implements Exception {}

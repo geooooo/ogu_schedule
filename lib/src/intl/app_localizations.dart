@@ -26,4 +26,10 @@ class AppLocalizations {
     name: 'AppLocalizations_scheduleForTodayText',
     locale: localeName,
   );
+
+  String get pgm71Text => Intl.message(
+    '71-ПГм',
+    name: 'AppLocalizations_pgm71Text',
+    locale: localeName,
+  );
 }

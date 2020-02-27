@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ogu_schedule/src/models/font.dart';
+import 'package:ogu_schedule/src/models/enums/font.dart';
 
 final ThemeData theme = ThemeData(
   fontFamily: Font.roboto,
@@ -13,6 +13,7 @@ final ThemeData theme = ThemeData(
     ),
     bodyText1: TextStyle(
       color: Color.fromRGBO(170, 170, 170, 1),
+      fontWeight: FontWeight.normal,
       fontSize: 16,
     ),
   ),

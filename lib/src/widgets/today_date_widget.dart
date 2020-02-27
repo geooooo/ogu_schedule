@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:ogu_schedule/src/intl/app_localizations.dart';
-import 'package:ogu_schedule/src/models/font.dart';
+import 'package:ogu_schedule/src/models/enums/font.dart';
 
 class TodayDateWidget extends StatelessWidget {
   @override

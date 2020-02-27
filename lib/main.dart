@@ -14,21 +14,7 @@ void main() => runApp(AppWidget());
 //
 //
 //
-//class LectureList extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) => Expanded(
-//    child: ListView.builder(
-//      itemBuilder: (context, index) {
-//        final isEven = index&1 == 0;
-//        return Lecture(
-//          backgroundColor: isEven?
-//            Color.fromARGB(255, 245, 248, 251) : Colors.white,
-//        );
-//      },
-//      itemCount: 30,
-//    ),
-//  );
-//}
+//
 //
 //class Lecture extends StatelessWidget {
 //  final Color backgroundColor;

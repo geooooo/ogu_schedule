@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:ogu_schedule/src/intl/app_localizations.dart';
 import 'package:ogu_schedule/src/intl/app_localizations_delegate.dart';
-import 'package:ogu_schedule/src/models/theme.dart';
+import 'package:ogu_schedule/src/models/data/theme.dart';
 import 'package:ogu_schedule/src/widgets/home_page_widget.dart';
 
 class AppWidget extends StatelessWidget {
