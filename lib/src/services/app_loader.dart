@@ -25,7 +25,7 @@ abstract class AppLoader {
       ..room = lecture.room
       ..houseNumber = lecture.houseNumber
       ..teacherName = _formatTeacherName(lecture.firstName, lecture.secondName, lecture.middleName)
-      ..timeBegin = LectureTime.byNumber(lecture.lectureNumber)
+      ..time = LectureTime.byNumber(lecture.lectureNumber)
     ));
   }
 

@@ -10,12 +10,16 @@ class _$AppState extends AppState {
   @override
   final bool isGetLecturesError;
   @override
+  final bool isGetLectureSuccess;
+  @override
   final BuiltList<Lecture> lectures;
 
   factory _$AppState([void Function(AppStateBuilder) updates]) =>
       (new AppStateBuilder()..update(updates)).build();
 
-  _$AppState._({this.isGetLecturesError, this.lectures}) : super._();
+  _$AppState._(
+      {this.isGetLecturesError, this.isGetLectureSuccess, this.lectures})
+      : super._();
 
   @override
   AppState rebuild(void Function(AppStateBuilder) updates) =>
@@ -29,18 +33,22 @@ class _$AppState extends AppState {
     if (identical(other, this)) return true;
     return other is AppState &&
         isGetLecturesError == other.isGetLecturesError &&
+        isGetLectureSuccess == other.isGetLectureSuccess &&
         lectures == other.lectures;
   }
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, isGetLecturesError.hashCode), lectures.hashCode));
+    return $jf($jc(
+        $jc($jc(0, isGetLecturesError.hashCode), isGetLectureSuccess.hashCode),
+        lectures.hashCode));
   }
 
   @override
   String toString() {
     return (newBuiltValueToStringHelper('AppState')
           ..add('isGetLecturesError', isGetLecturesError)
+          ..add('isGetLectureSuccess', isGetLectureSuccess)
           ..add('lectures', lectures))
         .toString();
   }
@@ -54,6 +62,11 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
   set isGetLecturesError(bool isGetLecturesError) =>
       _$this._isGetLecturesError = isGetLecturesError;
 
+  bool _isGetLectureSuccess;
+  bool get isGetLectureSuccess => _$this._isGetLectureSuccess;
+  set isGetLectureSuccess(bool isGetLectureSuccess) =>
+      _$this._isGetLectureSuccess = isGetLectureSuccess;
+
   ListBuilder<Lecture> _lectures;
   ListBuilder<Lecture> get lectures =>
       _$this._lectures ??= new ListBuilder<Lecture>();
@@ -64,6 +77,7 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
   AppStateBuilder get _$this {
     if (_$v != null) {
       _isGetLecturesError = _$v.isGetLecturesError;
+      _isGetLectureSuccess = _$v.isGetLectureSuccess;
       _lectures = _$v.lectures?.toBuilder();
       _$v = null;
     }
@@ -90,6 +104,7 @@ class AppStateBuilder implements Builder<AppState, AppStateBuilder> {
       _$result = _$v ??
           new _$AppState._(
               isGetLecturesError: isGetLecturesError,
+              isGetLectureSuccess: isGetLectureSuccess,
               lectures: _lectures?.build());
     } catch (_) {
       String _$failedField;

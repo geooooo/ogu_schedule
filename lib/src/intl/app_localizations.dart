@@ -32,4 +32,22 @@ class AppLocalizations {
     name: 'AppLocalizations_pgm71Text',
     locale: localeName,
   );
+
+  String get errorOnGetScheduleTryRestartApplicationText => Intl.message(
+    'Ошибка при получении расписания, попробуйте перезапустить приложение...',
+    name: 'AppLocalizations_errorOnGetScheduleTryRestartApplicationText',
+    locale: localeName,
+  );
+
+  String get noLecturesText => Intl.message(
+    'Занятий нет',
+    name: 'AppLocalizations_noLecturesText',
+    locale: localeName,
+  );
+
+  String get loadingScheduleText => Intl.message(
+    'Загрузка расписания...',
+    name: 'AppLocalizations_loadingScheduleText',
+    locale: localeName,
+  );
 }

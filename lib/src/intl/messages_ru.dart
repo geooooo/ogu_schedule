@@ -21,6 +21,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "AppLocalizations_errorOnGetScheduleTryRestartApplicationText" : MessageLookupByLibrary.simpleMessage("Ошибка при получении расписания, попробуйте перезапустить приложение..."),
+    "AppLocalizations_loadingScheduleText" : MessageLookupByLibrary.simpleMessage("Загрузка расписания..."),
+    "AppLocalizations_noLecturesText" : MessageLookupByLibrary.simpleMessage("Занятий нет"),
     "AppLocalizations_pgm71Text" : MessageLookupByLibrary.simpleMessage("71-ПГм"),
     "AppLocalizations_scheduleForTodayText" : MessageLookupByLibrary.simpleMessage("Расписание на сегодня"),
     "AppLocalizations_scheduleLecturesTurgenevUniversityText" : MessageLookupByLibrary.simpleMessage("Расписание занятий ОГУ им. Тургенева")

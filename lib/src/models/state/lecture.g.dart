@@ -18,7 +18,7 @@ class _$Lecture extends Lecture {
   @override
   final String teacherName;
   @override
-  final String timeBegin;
+  final String time;
 
   factory _$Lecture([void Function(LectureBuilder) updates]) =>
       (new LectureBuilder()..update(updates)).build();
@@ -29,7 +29,7 @@ class _$Lecture extends Lecture {
       this.houseNumber,
       this.room,
       this.teacherName,
-      this.timeBegin})
+      this.time})
       : super._();
 
   @override
@@ -48,7 +48,7 @@ class _$Lecture extends Lecture {
         houseNumber == other.houseNumber &&
         room == other.room &&
         teacherName == other.teacherName &&
-        timeBegin == other.timeBegin;
+        time == other.time;
   }
 
   @override
@@ -60,7 +60,7 @@ class _$Lecture extends Lecture {
                     houseNumber.hashCode),
                 room.hashCode),
             teacherName.hashCode),
-        timeBegin.hashCode));
+        time.hashCode));
   }
 
   @override
@@ -71,7 +71,7 @@ class _$Lecture extends Lecture {
           ..add('houseNumber', houseNumber)
           ..add('room', room)
           ..add('teacherName', teacherName)
-          ..add('timeBegin', timeBegin))
+          ..add('time', time))
         .toString();
   }
 }
@@ -99,9 +99,9 @@ class LectureBuilder implements Builder<Lecture, LectureBuilder> {
   String get teacherName => _$this._teacherName;
   set teacherName(String teacherName) => _$this._teacherName = teacherName;
 
-  String _timeBegin;
-  String get timeBegin => _$this._timeBegin;
-  set timeBegin(String timeBegin) => _$this._timeBegin = timeBegin;
+  String _time;
+  String get time => _$this._time;
+  set time(String time) => _$this._time = time;
 
   LectureBuilder();
 
@@ -112,7 +112,7 @@ class LectureBuilder implements Builder<Lecture, LectureBuilder> {
       _houseNumber = _$v.houseNumber;
       _room = _$v.room;
       _teacherName = _$v.teacherName;
-      _timeBegin = _$v.timeBegin;
+      _time = _$v.time;
       _$v = null;
     }
     return this;
@@ -140,7 +140,7 @@ class LectureBuilder implements Builder<Lecture, LectureBuilder> {
             houseNumber: houseNumber,
             room: room,
             teacherName: teacherName,
-            timeBegin: timeBegin);
+            time: time);
     replace(_$result);
     return _$result;
   }

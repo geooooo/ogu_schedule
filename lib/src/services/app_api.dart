@@ -9,6 +9,7 @@ abstract class AppApi {
 
   static Future<Iterable<Lecture>> getLectures(GetLecturesRequest request) async {
     try {
+      await Future<Object>.delayed(Duration(seconds: 2));
       final response = await get('$host/schedule//${request.groupId}///${request.timestampWeek}/printschedule');
       final decodedBody = utf8.decode(response.bodyBytes);
       final lectureMaps = json.decode(decodedBody) as List<dynamic>;

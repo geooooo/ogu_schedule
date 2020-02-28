@@ -9,6 +9,9 @@ abstract class AppState implements Built<AppState, AppStateBuilder> {
   bool get isGetLecturesError;
 
   @nullable
+  bool get isGetLectureSuccess;
+
+  @nullable
   BuiltList<Lecture> get lectures;
 
   AppState._();

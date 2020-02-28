@@ -19,7 +19,7 @@ abstract class Lecture implements Built<Lecture, LectureBuilder> {
   String get teacherName;
 
   @nullable
-  String get timeBegin;
+  String get time;
 
   Lecture._();
   factory Lecture([void Function(LectureBuilder) updates]) = _$Lecture;

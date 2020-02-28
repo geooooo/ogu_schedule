@@ -15,6 +15,7 @@ abstract class AppService {
   static AppState stateFactory() => AppState((b) => b
     ..lectures.replace(<Lecture>[])
     ..isGetLecturesError = false
+    ..isGetLectureSuccess = false
   );
 
   static Future<void> getLectures() async {
@@ -23,8 +24,10 @@ abstract class AppService {
         groupId: Group.pgm71.id,
         timestampWeek: _timestampCurrentWeek,
       );
-      print(lectures);
-      _update((b) => b.lectures.replace(lectures));
+      _update((b) => b
+        ..isGetLectureSuccess = true
+        ..lectures.replace(lectures)
+      );
     } on GetLecturesException {
       _update((b) => b.isGetLecturesError = true);
     }

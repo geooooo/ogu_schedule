@@ -1,6 +1,6 @@
 {
   "@@locale": "ru",
-  "@@last_modified": "2020-02-27T23:05:53.684253",
+  "@@last_modified": "2020-02-29T00:44:14.255247",
   "AppLocalizations_scheduleLecturesTurgenevUniversityText": "Расписание занятий ОГУ им. Тургенева",
   "@AppLocalizations_scheduleLecturesTurgenevUniversityText": {
     "type": "text",
@@ -13,6 +13,21 @@
   },
   "AppLocalizations_pgm71Text": "71-ПГм",
   "@AppLocalizations_pgm71Text": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AppLocalizations_errorOnGetScheduleTryRestartApplicationText": "Ошибка при получении расписания, попробуйте перезапустить приложение...",
+  "@AppLocalizations_errorOnGetScheduleTryRestartApplicationText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AppLocalizations_noLecturesText": "Занятий нет",
+  "@AppLocalizations_noLecturesText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AppLocalizations_loadingScheduleText": "Загрузка расписания...",
+  "@AppLocalizations_loadingScheduleText": {
     "type": "text",
     "placeholders": {}
   }
